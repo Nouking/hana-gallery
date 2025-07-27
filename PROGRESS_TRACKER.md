@@ -80,6 +80,13 @@
 - ✅ Dev server running on localhost:5173
 - ✅ **Git Repository**: Initialized, committed, and pushed to GitHub
 - ✅ **GitHub Repo**: https://github.com/Nouking/hana-gallery.git
+- ✅ **Documentation Added**: All project docs & .cursorrules in repo for cross-device development
+  - PROJECT_STORY.md (project vision & architecture)
+  - PROJECT_TASKS.md (54 detailed tasks breakdown)
+  - PROGRESS_TRACKER.md (daily progress tracking)
+  - SETUP_COMMANDS.md (installation commands)
+  - WINDOWS_SETUP.md (Windows-specific setup)
+  - .cursorrules (AI coding guidelines)
 
 ### **In Progress** 🔄
 - Ready to start SETUP-003 (Firebase Authentication)
