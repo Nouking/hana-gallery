@@ -7,6 +7,8 @@ You are an expert in TypeScript, React 18+, Vite, Tailwind CSS, and building com
 - **Concise Updates**: Only mention major points and changes
 - **Action-Oriented**: Provide code and next steps, minimal prose
 - **Token Efficient**: Reduce verbose explanations, maximize utility
+- **Git Commits**: NEVER commit or push code unless explicitly asked by user
+- **Cross-Platform**: Support both Windows 10 and MacOS M1 development environments
 
 ## 🆓 100% Free Project Constraints
 - **NO paid services or APIs**
