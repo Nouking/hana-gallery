@@ -1,0 +1,218 @@
+# Daughter's Memory Gallery - Cursor Rules (100% FREE VERSION)
+
+You are an expert in TypeScript, React 18+, Vite, Tailwind CSS, and building completely FREE web applications with modern development practices.
+
+## 🎯 AI Response Guidelines
+- **Talk Less, Do More**: Focus on implementation over explanation
+- **Concise Updates**: Only mention major points and changes
+- **Action-Oriented**: Provide code and next steps, minimal prose
+- **Token Efficient**: Reduce verbose explanations, maximize utility
+
+## 🆓 100% Free Project Constraints
+- **NO paid services or APIs**
+- **NO server costs or hosting fees**
+- **NO authentication service costs**
+- **NO database subscription fees**
+- **NO external API costs**
+
+## Core Tech Stack (All Free)
+- **Framework**: React 18+ with TypeScript
+- **Build Tool**: Vite 4+ 
+- **Styling**: Tailwind CSS 3+ with responsive design
+- **State Management**: Zustand (free) + React Query (free)
+- **Authentication**: Firebase Auth (free tier: 50K users)
+- **Storage**: Browser IndexedDB + LocalStorage
+- **Hosting**: Vercel Free Tier (unlimited personal projects)
+
+## Photo Management Strategy
+- **Google Photos Picker API**: Free photo selection from user's library
+- **Local Upload**: Direct file upload from device
+- **Browser Storage**: IndexedDB for photo metadata and caching
+- **No Cloud Storage Costs**: Everything stored client-side
+
+## Important API Constraints (April 2025 Changes)
+- **Google Photos Library API**: Now restricted to app-uploaded photos only
+- **Use Picker API Instead**: For accessing user's existing photos
+- **Free Quota**: Unlimited for Picker API usage
+- **No Authentication Costs**: Use Firebase Auth free tier
+
+## Code Style and Structure
+- Write concise, technical TypeScript code with accurate examples
+- Use functional and declarative programming patterns; avoid classes
+- Prefer iteration and modularization over code duplication
+- Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError, isAuthenticated)
+- Structure files: exported component, subcomponents, helpers, static content, types
+
+## Naming Conventions
+- Use lowercase with dashes for directories (e.g., components/photo-grid, hooks/use-photos)
+- Favor named exports for components and utilities
+- Use PascalCase for React components (PhotoGrid, LoginButton)
+- Use camelCase for functions, variables, and hooks (usePhotos, handlePhotoClick)
+- Prefix custom hooks with 'use' (useAuth, usePhotos, useLocalStorage)
+- Prefix event handlers with 'handle' (handleLogin, handlePhotoSelect)
+
+## TypeScript Usage
+- Use TypeScript for all code; prefer interfaces over types for object shapes
+- Avoid enums; use const objects or string literal unions instead
+- Use functional components with TypeScript interfaces for props
+- Implement proper error boundaries with TypeScript
+- Use strict mode and proper null checking
+
+## React Best Practices
+- Use functional components with hooks
+- Prefer composition over inheritance
+- Use React.memo() for expensive components (photo grids, image components)
+- Implement proper error boundaries for API failures
+- Use Suspense with fallback for data loading states
+- Minimize re-renders with useCallback and useMemo where appropriate
+
+## Free Storage Management
+- Use IndexedDB for photo metadata and caching
+- Use LocalStorage for user preferences and settings
+- Implement efficient caching strategies for photos
+- Handle storage quota limits gracefully
+- Provide export/import functionality for data backup
+
+## Photo API Integration (Free Methods)
+- Implement Google Photos Picker API for photo selection
+- Handle local file uploads with File API
+- Use browser-native image processing
+- Implement client-side image optimization
+- Cache photos efficiently in browser storage
+
+## UI and Styling (Free Approach)
+- Use Tailwind CSS for all styling; avoid paid UI libraries
+- Implement mobile-first responsive design
+- Use free icon libraries (Lucide React, Heroicons)
+- Create custom components instead of paid libraries
+- Implement proper loading states and skeletons
+- Use CSS-only animations where possible
+
+## Performance Optimization (Free Methods)
+- Implement virtual scrolling for large photo grids
+- Use React.lazy() for code splitting
+- Optimize images with browser-native APIs
+- Implement intersection observer for lazy loading
+- Use proper memoization for expensive computations
+- Minimize bundle size with tree shaking
+
+## Authentication (Free Tier)
+```typescript
+interface AuthState {
+  isAuthenticated: boolean;
+  user: FirebaseUser | null;
+  accessToken: string | null;
+  expiresAt: number | null;
+}
+```
+
+## Data Models (Client-Side)
+```typescript
+interface Photo {
+  id: string;
+  filename: string;
+  blob: Blob;
+  metadata: PhotoMetadata;
+  creationTime: string;
+  localPath: string;
+}
+
+interface PhotoCategory {
+  id: string;
+  name: string;
+  photos: Photo[];
+  dateRange: DateRange;
+  tags: string[];
+}
+```
+
+## Free Hosting Best Practices
+- Optimize build for Vercel deployment
+- Use environment variables for configuration
+- Implement proper SEO meta tags
+- Ensure mobile-first responsive design
+- Optimize Core Web Vitals for free hosting
+
+## Browser Storage Patterns
+- Use IndexedDB for large photo data
+- Implement storage quota management
+- Handle browser storage limits gracefully
+- Provide data export/import functionality
+- Use Cache API for photo caching
+
+## Error Handling (Free Approach)
+- Implement comprehensive error boundaries
+- Handle storage quota exceeded errors
+- Provide user-friendly error messages
+- Log errors to browser console (no external services)
+- Implement retry mechanisms for failed operations
+
+## Security Best Practices (Free Tier)
+- Use HTTPS (free on Vercel)
+- Implement proper input validation
+- Sanitize file uploads
+- Use Firebase Auth security rules (free)
+- Implement proper CORS handling
+
+## Testing Strategy (Free Tools)
+- Write unit tests with Vitest (free)
+- Test React components with React Testing Library (free)
+- Use browser dev tools for debugging (free)
+- Test on real devices (free)
+- Implement accessibility testing
+
+## Code Organization (Free Structure)
+```
+src/
+├── components/
+│   ├── ui/           # Free custom UI components
+│   ├── auth/         # Firebase Auth components  
+│   ├── gallery/      # Photo gallery components
+│   └── layout/       # Layout components
+├── hooks/            # Custom React hooks
+├── services/         # Free API services
+├── stores/           # Zustand stores
+├── types/            # TypeScript definitions
+├── utils/            # Helper functions
+└── storage/          # Browser storage utilities
+```
+
+## Free Feature Implementation
+- **Photo Upload**: File API + drag-and-drop
+- **Image Processing**: Canvas API for resizing/optimization
+- **Search**: Client-side fuzzy search algorithms
+- **Categorization**: JavaScript date/pattern matching
+- **Sharing**: Generate shareable URLs with data
+- **PWA**: Service Worker for offline functionality
+
+## Key Conventions
+1. Prioritize user experience within free constraints
+2. Implement proper loading states for all operations
+3. Handle storage limits and quota exceeded scenarios
+4. Use semantic HTML and proper accessibility attributes
+5. Optimize for both mobile and desktop experiences
+6. Implement proper error recovery mechanisms
+7. Use browser APIs effectively for free functionality
+8. Follow React and Vite best practices for free deployment
+
+## Photo Gallery Specific Guidelines (Free)
+- Implement CSS Grid masonry layouts (no paid libraries)
+- Use Intersection Observer for lazy loading (browser native)
+- Create smooth animations with CSS + Framer Motion (free)
+- Build custom lightbox component (no paid libraries)
+- Support multiple view modes (grid, list, timeline)
+- Implement browser-native image optimization
+- Handle different aspect ratios with CSS
+- Provide smooth touch gestures for mobile
+
+## Free Deployment Checklist
+- [ ] Optimize bundle size for free hosting limits
+- [ ] Configure Vercel deployment settings
+- [ ] Set up environment variables
+- [ ] Test on free hosting environment
+- [ ] Verify mobile responsiveness
+- [ ] Check Core Web Vitals scores
+- [ ] Ensure accessibility compliance
+- [ ] Test offline PWA functionality
+
+Remember: This is a completely FREE project celebrating precious family memories. Every feature should work within free tier constraints while still providing a delightful experience. Focus on creating an emotional connection through thoughtful UI/UX design using only free tools and services. 
